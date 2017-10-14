@@ -1,7 +1,7 @@
 package bean;
 
 public class authorinf {
-	private String AuthorID;
+	private String AuthorID;   //зїепЪєад
 	private String Name;
 	private String Age;
 	private String Country;

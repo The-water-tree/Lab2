@@ -1,7 +1,7 @@
 package bean;
 
 public class bookinf {
-	private String ISBN;
+	private String ISBN;    // Èµƒ Ù–‘
 	private String Title;
 	private String AuthorID;
 	private String Publisher;
