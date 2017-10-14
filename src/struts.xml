@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="action" namespace="" extends="struts-default">
+    <action name="query" class="action.searchAction" method="findAuthoridByName">
+    	<result name="success">searchsuccess.jsp</result>
+    	<result name="fail">searchhalffail.jsp</result>
+    	<result name="noauthor">searchfail.jsp</result>
+    </action>
+    <action name="findauthorbyISBN" class="action.searchAction" method="findAuthorByISBN">
+    	<result name="success">detailsearch.jsp</result>
+    </action>
+    <action name="deletebookbyISBN" class="action.deleteAction" method="deleteBook">
+    	<result name="success">delSuccess.jsp</result>
+    	<result name="fail">delFail.jsp</result>
+    </action>
+    <action name="update" class="action.updateAction" method="updateBook">
+    	<result name="success">updateSuccess.jsp</result>
+    	<result name="fail">updateFail.jsp</result>
+    </action>
+    <action name="search" class="action.searchAction" method="searchAuthor">
+    	<result name="add">addAuthor.jsp</result>
+    	<result name="noadd">addBook.jsp</result>
+    </action>
+    <action name="addAuthor" class="action.addAction" method="addAuthor">
+    	<result name="success">addAuthorok.jsp</result>
+    	<result name="fail">addAuthorfail.jsp</result>
+    </action>
+    <action name="addBook" class="action.addAction" method="addBook">
+    	<result name="success">addBookok.jsp</result>
+    	<result name="fail">addBookfail.jsp</result>
+    </action>
+    </package>
+</struts>
